@@ -1,0 +1,20 @@
+
+   Symfony\Component\Debug\Exception\FatalThrowableError  : syntax error, unexpected 'Route' (T_STRING)
+
+  at /Applications/MAMP/htdocs/task_test/routes/web.php:25
+    21| Route::resource('contacts', 'ContactFormController')
+    22| 
+    23| //Auth::routes();
+    24| 
+  > 25| Route::get('/home', 'HomeController@index')->name('home');
+    26|
+
+  Exception trace:
+
+  1   Illuminate\Routing\RouteFileRegistrar::register("/Applications/MAMP/htdocs/task_test/routes/web.php")
+      /Applications/MAMP/htdocs/task_test/vendor/laravel/framework/src/Illuminate/Routing/Router.php:416
+
+  2   Illuminate\Routing\Router::loadRoutes("/Applications/MAMP/htdocs/task_test/routes/web.php")
+      /Applications/MAMP/htdocs/task_test/vendor/laravel/framework/src/Illuminate/Routing/Router.php:374
+
+  Please use the argument -v to see more details.
